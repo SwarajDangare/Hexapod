@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find Hexapod_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="Hexapod" args="joint1_leg1_position_controller joint2_leg1_position_controller joint3_leg1_position_controller joint1_leg2_position_controller joint1_leg3_position_controller joint1_leg4_position_controller joint1_leg5_position_controller joint1_leg6_position_controller joint2_leg6_position_controller joint2_leg5_position_controller joint2_leg4_position_controller joint2_leg3_position_controller joint2_leg2_position_controller joint3_leg2_position_controller joint3_leg3_position_controller joint3_leg4_position_controller joint3_leg5_position_controller joint3_leg6_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/Hexapod/joint_states"/>
+</node>
+
+</launch>

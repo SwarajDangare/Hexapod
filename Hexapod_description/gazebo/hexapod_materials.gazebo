@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<robot name="Hexapod" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Red" />
+<xacro:property name="body_link" value="Gazebo/Blue" />
+<xacro:property name="body_sw" value="Gazebo/Black" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_1">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_1">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_1">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_2">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_3">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_4">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_5">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link1_leg_6">
+  <material>${body_sw}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_6">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_5">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_4">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_3">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link2_leg_2">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_2">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_3">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_4">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_5">
+  <material>${body_link}</material>
+</gazebo>
+
+<gazebo reference="link3_leg_6">
+  <material>${body_link}</material>
+</gazebo>
+
+</robot>
